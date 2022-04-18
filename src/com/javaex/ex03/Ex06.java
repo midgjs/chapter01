@@ -3,22 +3,25 @@ package com.javaex.ex03;
 import java.util.Scanner;
 
 public class Ex06 {
-	
+
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("점수를 입력하세요");
-		int point = sc.nextInt();
-		if(point%3==0) {
-			System.out.println(point+"은(는) 3의 배수입니다.");
-			
-		}else {
-			System.out.println(point+"은(는) 3의 배수가 아닙니다.");
+		System.out.print("근무시간: ");
+		int time = sc.nextInt();
+		int pay;
+		
+		if(8>=time) {
+			pay=time*10000;
+					
+		} else {
+			pay = 8*10000 + (time-8)*((int)(10000*1.5));
 		}
 		
+		System.out.println("임금은" + pay + "원 입니다.");
 		
 		sc.close();
-		
 	}
+
 }

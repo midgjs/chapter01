@@ -17,6 +17,8 @@ public class Ex12 {
 			System.out.println("합계:" + sum);
 		}while(num != 0);
 		*/
+		System.out.println("=========================");
+		
 		while(true) {
 			num = sc.nextInt(); //입력받을 값
 			sum = sum + num;
